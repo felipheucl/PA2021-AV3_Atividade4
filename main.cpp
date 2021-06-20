@@ -7,7 +7,7 @@ using namespace lib;
 int main() {
 
 float cateto1, cateto2;
-int ctrl, c, num1=3, num2=4;
+int ctrl, num1=3, num2=4;
 
 cout<<endl<<endl<<"DESAFIO 4 - Cálculo com figuras geométricas: Triângulos retângulos"<<endl<<endl;
 cout<<"Digite o valor do 1º cateto:"<<endl;
@@ -20,11 +20,13 @@ cout<<"2 - Área do Triangulo"<<endl;
 cout<<"3 - Valor da Hipotenusa"<<endl;
 cout<<"[Enter] - Todas as operações"<<endl<<endl;
 
-cout<<Hipotenusa(15,20)<<endl;
+cout<<"Hipotenusa: "<<Hipotenusa(15,20)<<endl;
 
-cout<<Perimetro(15,20)<<endl;
+cout<<"Perímetro: "<<Perimetro(15,20)<<endl;
 
-cout<<Area(15.0f,20.0f);
+cout<<"Área: "<<Area(15,20);
 
+tTriangulos Triangulo=tTriangulos(num1,num2,Hipotenusa(num1,num2));
+cout<<endl<<Triangulo<<endl;
 
 }

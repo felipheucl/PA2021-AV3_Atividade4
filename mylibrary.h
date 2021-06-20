@@ -27,5 +27,25 @@ namespace lib{
         return r;
 
     }
+    
+    struct tTriangulos
+    {
+        tTriangulos (float l1, float l2, float l3): lado1(l1), lado2(l2), lado3(l3)
+        {
+        }
+
+        public:
+        float lado1, lado2, lado3;
+  
+        friend ostream& operator<<(ostream& os, const tTriangulos& tT)
+
+        {
+        os << tT.lado1 << endl << tT.lado2 << endl << tT.lado3 << endl;
+        return os;
+        }
+
+        
+    };
+    
 
 }
