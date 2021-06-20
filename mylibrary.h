@@ -38,7 +38,6 @@ namespace lib{
         float lado1, lado2, lado3;
   
         friend ostream& operator<<(ostream& os, const tTriangulos& tT)
-
         {
         os << "Medidas dos lados: " << tT.lado1 << ", " << tT.lado2 << ", " << tT.lado3 << endl;
         return os;
