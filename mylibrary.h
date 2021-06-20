@@ -23,7 +23,7 @@ namespace lib{
     float Area(float num1, float num2)
     {
         float r;
-        r=((num1 + num2)/2);
+        r=((num1 * num2)/2);
         return r;
 
     }
@@ -40,7 +40,7 @@ namespace lib{
         friend ostream& operator<<(ostream& os, const tTriangulos& tT)
 
         {
-        os << tT.lado1 << endl << tT.lado2 << endl << tT.lado3 << endl;
+        os << "Medidas dos lados: " << tT.lado1 << ", " << tT.lado2 << ", " << tT.lado3 << endl;
         return os;
         }
 
